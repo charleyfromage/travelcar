@@ -10,16 +10,83 @@
         <!--Item 2-->
         <scene sceneID="fy4-f6-J3x">
             <objects>
-                <viewController id="ZQI-kL-HCb" customClass="AccountViewController" customModule="travelcar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZQI-kL-HCb" customClass="ProfileViewController" customModule="travelcar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BCm-fp-6dd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7dK-zl-zu9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="729"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="XVK-ab-R9P">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="24j-ii-apA">
+                                            <rect key="frame" x="132" y="0.0" width="150" height="150"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="150" id="M88-s5-TM4"/>
+                                                <constraint firstAttribute="width" constant="150" id="kKL-C1-ezH"/>
+                                            </constraints>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0D-ib-6DJ">
+                                            <rect key="frame" x="247" y="115" width="30" height="30"/>
+                                            <connections>
+                                                <action selector="editProfilePictureTapped" destination="ZQI-kL-HCb" eventType="touchUpInside" id="IHj-uG-1bF"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="W0D-ib-6DJ" firstAttribute="centerY" secondItem="24j-ii-apA" secondAttribute="centerY" constant="55" id="2g1-ph-4TH"/>
+                                        <constraint firstAttribute="height" constant="150" id="QDg-kw-52v"/>
+                                        <constraint firstItem="24j-ii-apA" firstAttribute="centerY" secondItem="XVK-ab-R9P" secondAttribute="centerY" id="aQY-it-lTl"/>
+                                        <constraint firstItem="W0D-ib-6DJ" firstAttribute="centerX" secondItem="24j-ii-apA" secondAttribute="centerX" constant="55" id="mS3-4y-8qp"/>
+                                        <constraint firstItem="24j-ii-apA" firstAttribute="centerX" secondItem="XVK-ab-R9P" secondAttribute="centerX" id="pS4-V3-Y6G"/>
+                                    </constraints>
+                                </view>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZQI-kL-HCb" id="aA0-Yj-gde"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQE-xV-UoL">
+                                <rect key="frame" x="0.0" y="773" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="IT0-3O-IfH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="saveProfile" destination="ZQI-kL-HCb" eventType="touchUpInside" id="qJx-qs-qaq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="aD5-jL-bxL" firstAttribute="bottom" secondItem="GQE-xV-UoL" secondAttribute="bottom" id="99g-6a-S6D"/>
+                            <constraint firstItem="aD5-jL-bxL" firstAttribute="trailing" secondItem="GQE-xV-UoL" secondAttribute="trailing" id="AVi-00-k2K"/>
+                            <constraint firstItem="GQE-xV-UoL" firstAttribute="leading" secondItem="aD5-jL-bxL" secondAttribute="leading" id="WH1-bk-vGN"/>
+                            <constraint firstItem="7dK-zl-zu9" firstAttribute="top" secondItem="aD5-jL-bxL" secondAttribute="top" id="a6O-ds-J9b"/>
+                            <constraint firstItem="7dK-zl-zu9" firstAttribute="leading" secondItem="aD5-jL-bxL" secondAttribute="leading" id="aOe-9d-R0r"/>
+                            <constraint firstItem="GQE-xV-UoL" firstAttribute="top" secondItem="7dK-zl-zu9" secondAttribute="bottom" id="fUG-EY-TDR"/>
+                            <constraint firstItem="aD5-jL-bxL" firstAttribute="trailing" secondItem="7dK-zl-zu9" secondAttribute="trailing" id="pcW-cu-TsC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aD5-jL-bxL"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="isc-i0-g4R" appends="YES" id="7g5-Vq-Lkk"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="pQ2-y1-4PC"/>
+                    <connections>
+                        <outlet property="editPistureButton" destination="W0D-ib-6DJ" id="Pea-5C-WmA"/>
+                        <outlet property="imageView" destination="24j-ii-apA" id="ydU-ml-CFC"/>
+                        <outlet property="saveProfileButton" destination="GQE-xV-UoL" id="964-uZ-ruO"/>
+                        <outlet property="tableView" destination="7dK-zl-zu9" id="Ycu-Tu-16G"/>
+                        <outlet property="tapGestureRecognizer" destination="isc-i0-g4R" id="Tzs-Ms-mCg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YWd-fY-InG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="isc-i0-g4R"/>
             </objects>
             <point key="canvasLocation" x="325" y="113"/>
         </scene>
@@ -105,7 +172,6 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zJP-ye-0PJ">
                                             <rect key="frame" x="5" y="96" width="40" height="108"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="XOe-ZV-pSt"/>
                                                 <constraint firstAttribute="width" constant="40" id="sAh-9U-uFS"/>
                                             </constraints>
                                         </stackView>

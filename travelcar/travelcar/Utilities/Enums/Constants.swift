@@ -14,4 +14,12 @@ enum Constants {
     enum Segues {
         static let pushToDetails = "pushToDetails"
     }
+
+    enum UserDefaultsKeys {
+        static let profile = "profile"
+    }
+
+    enum DateFormats {
+        static let profile = "dd/MM/yyyy"
+    }
 }

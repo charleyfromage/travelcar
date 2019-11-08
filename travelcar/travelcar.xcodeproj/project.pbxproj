@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A13D54B47DA4AB9C10C2EA89 /* Pods_travelcar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEDD6BE94D9B932117AC454 /* Pods_travelcar.framework */; };
+		B268CF182374805B00F07345 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B268CF172374805B00F07345 /* Profile.swift */; };
+		B268CF1A23748C0100F07345 /* Date+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B268CF1923748C0100F07345 /* Date+Helpers.swift */; };
 		B274CFC6237330EA00951A4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B274CFC5237330EA00951A4D /* AppDelegate.swift */; };
 		B274CFC8237330EA00951A4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B274CFC7237330EA00951A4D /* SceneDelegate.swift */; };
 		B274CFCD237330EA00951A4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B274CFCB237330EA00951A4D /* Main.storyboard */; };
@@ -15,7 +17,7 @@
 		B274CFD2237330EB00951A4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B274CFD0237330EB00951A4D /* LaunchScreen.storyboard */; };
 		B274CFDE2373341400951A4D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B274CFDD2373341400951A4D /* ListViewController.swift */; };
 		B274CFE02373342200951A4D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B274CFDF2373342200951A4D /* DetailsViewController.swift */; };
-		B274CFE22373342E00951A4D /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B274CFE12373342E00951A4D /* AccountViewController.swift */; };
+		B274CFE22373342E00951A4D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B274CFE12373342E00951A4D /* ProfileViewController.swift */; };
 		B274CFE92373372900951A4D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B274CFE82373372900951A4D /* Podfile */; };
 		B274CFEB2373375F00951A4D /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = B274CFEA2373375F00951A4D /* Services.swift */; };
 		B274CFF02373385300951A4D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B274CFEF2373385300951A4D /* Constants.swift */; };
@@ -31,11 +33,15 @@
 		B274D00823744F9D00951A4D /* String+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B274D00723744F9D00951A4D /* String+Helpers.swift */; };
 		B274D00C237455C200951A4D /* CarFeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B274D00A237455C200951A4D /* CarFeatureCell.swift */; };
 		B274D00D237455C200951A4D /* CarFeatureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B274D00B237455C200951A4D /* CarFeatureCell.xib */; };
+		B274D011237469AA00951A4D /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B274D00F237469AA00951A4D /* ProfileCell.swift */; };
+		B274D012237469AA00951A4D /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B274D010237469AA00951A4D /* ProfileCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		428492D44916EB5E2B6F06F2 /* Pods-travelcar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travelcar.release.xcconfig"; path = "Target Support Files/Pods-travelcar/Pods-travelcar.release.xcconfig"; sourceTree = "<group>"; };
 		6BEDD6BE94D9B932117AC454 /* Pods_travelcar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_travelcar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B268CF172374805B00F07345 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		B268CF1923748C0100F07345 /* Date+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Helpers.swift"; sourceTree = "<group>"; };
 		B274CFC2237330EA00951A4D /* travelcar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = travelcar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B274CFC5237330EA00951A4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B274CFC7237330EA00951A4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +51,7 @@
 		B274CFD3237330EB00951A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B274CFDD2373341400951A4D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		B274CFDF2373342200951A4D /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		B274CFE12373342E00951A4D /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		B274CFE12373342E00951A4D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B274CFE82373372900951A4D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		B274CFEA2373375F00951A4D /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		B274CFEF2373385300951A4D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -61,6 +67,8 @@
 		B274D00723744F9D00951A4D /* String+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Helpers.swift"; sourceTree = "<group>"; };
 		B274D00A237455C200951A4D /* CarFeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFeatureCell.swift; sourceTree = "<group>"; };
 		B274D00B237455C200951A4D /* CarFeatureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarFeatureCell.xib; sourceTree = "<group>"; };
+		B274D00F237469AA00951A4D /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		B274D010237469AA00951A4D /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 		F309D313467AAFDB63967870 /* Pods-travelcar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travelcar.debug.xcconfig"; path = "Target Support Files/Pods-travelcar/Pods-travelcar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,12 +146,13 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
-		B274CFDA2373325700951A4D /* Account */ = {
+		B274CFDA2373325700951A4D /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				B274CFE12373342E00951A4D /* AccountViewController.swift */,
+				B274CFE12373342E00951A4D /* ProfileViewController.swift */,
+				B274D00E2374699500951A4D /* Cells */,
 			);
-			path = Account;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		B274CFDB237333EC00951A4D /* List */ = {
@@ -176,7 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				B274CFD92373325000951A4D /* Search */,
-				B274CFDA2373325700951A4D /* Account */,
+				B274CFDA2373325700951A4D /* Profile */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -185,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				B274CFF1237338FA00951A4D /* Car.swift */,
+				B268CF172374805B00F07345 /* Profile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -216,6 +226,7 @@
 				B274D0012373537800951A4D /* NSObject+Helpers.swift */,
 				B274D00523735E9100951A4D /* UIImage+Helpers.swift */,
 				B274D00723744F9D00951A4D /* String+Helpers.swift */,
+				B268CF1923748C0100F07345 /* Date+Helpers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -242,6 +253,15 @@
 			children = (
 				B274D00A237455C200951A4D /* CarFeatureCell.swift */,
 				B274D00B237455C200951A4D /* CarFeatureCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B274D00E2374699500951A4D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B274D00F237469AA00951A4D /* ProfileCell.swift */,
+				B274D010237469AA00951A4D /* ProfileCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -309,6 +329,7 @@
 				B274CFD2237330EB00951A4D /* LaunchScreen.storyboard in Resources */,
 				B274CFCF237330EB00951A4D /* Assets.xcassets in Resources */,
 				B274CFE92373372900951A4D /* Podfile in Resources */,
+				B274D012237469AA00951A4D /* ProfileCell.xib in Resources */,
 				B274D00D237455C200951A4D /* CarFeatureCell.xib in Resources */,
 				B274CFCD237330EA00951A4D /* Main.storyboard in Resources */,
 				B274CFFE2373532E00951A4D /* CarCell.xib in Resources */,
@@ -372,13 +393,16 @@
 				B274CFF72373473900951A4D /* TableViewAnimation.swift in Sources */,
 				B274CFF2237338FA00951A4D /* Car.swift in Sources */,
 				B274CFFD2373532E00951A4D /* CarCell.swift in Sources */,
-				B274CFE22373342E00951A4D /* AccountViewController.swift in Sources */,
+				B274CFE22373342E00951A4D /* ProfileViewController.swift in Sources */,
+				B268CF1A23748C0100F07345 /* Date+Helpers.swift in Sources */,
 				B274D0002373536200951A4D /* UITableView+Helpers.swift in Sources */,
 				B274D00423735CAB00951A4D /* Assets.swift in Sources */,
 				B274CFDE2373341400951A4D /* ListViewController.swift in Sources */,
 				B274D00C237455C200951A4D /* CarFeatureCell.swift in Sources */,
 				B274CFC8237330EA00951A4D /* SceneDelegate.swift in Sources */,
 				B274CFE02373342200951A4D /* DetailsViewController.swift in Sources */,
+				B274D011237469AA00951A4D /* ProfileCell.swift in Sources */,
+				B268CF182374805B00F07345 /* Profile.swift in Sources */,
 				B274D0022373537800951A4D /* NSObject+Helpers.swift in Sources */,
 				B274CFF02373385300951A4D /* Constants.swift in Sources */,
 			);

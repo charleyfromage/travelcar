@@ -26,5 +26,7 @@ enum Assets {
     enum Profile {
         static let profileOn = #imageLiteral(resourceName: "profile")
         static let profileOff = #imageLiteral(resourceName: "profile").alpha(0.5)
+
+        static let editProfilePicture = #imageLiteral(resourceName: "editPicture")
     }
 }
